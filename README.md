@@ -13,4 +13,8 @@ Also using a [This textbook](https://www.pdfdrive.com/flask-web-development-deve
 - Templates
 - Error Handelling
 - More to come 
+- Bootstrap using Flask
+- Handling Forms using Flask
+- Web Forms
+- Database
 
