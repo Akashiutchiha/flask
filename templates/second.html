@@ -1,0 +1,47 @@
+{% extends "bootstrap/base.html" %}
+{% block title %} Login {% endblock %}
+{% block body %}
+{% block nav %}
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#"> Let's Connect </a>
+    </li>
+  </ul>
+{% endblock %}
+<div class="container">
+    <p style="font-size: 50px;">Login Here</p>
+        <form>
+            <div class="input-group" style="padding-top: 10px;">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+            </div>
+            <div class="input-group" style="padding-top: 10px; padding-bottom: 10px;">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+              <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <p>
+                <button name="submit" class="btn btn-success" type="button">
+                    Login
+                </button>
+                <button name="cancel" class="btn btn-danger" type="button">
+                    cancel
+                </button>
+            </p>
+          </form>
+          <div>
+            <p style="font-size: 25px; padding-top: 50px;">Not yet a user, Sign-in Here</p>
+            <button name="cancel" class="btn btn-primary" type="button">
+                <a href="/second">Sign-in</a>
+            </button>
+          </div>
+</div>
+{% endblock %}
