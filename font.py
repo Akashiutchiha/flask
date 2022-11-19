@@ -2,9 +2,21 @@ from crypt import methods
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
+import os
+from flask_sqlalchemy import SQLAlchemy # Started wotking with Database
+basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 app = Flask(__name__)
+
+#Configuring the database
+app.config['SQLALCHEMY_DATABASE_URI'] =\
+'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)  #Database set
+
+
+
 bootstrap = Bootstrap(app)
 app.config['SECRET_KEY'] = '123'
 
