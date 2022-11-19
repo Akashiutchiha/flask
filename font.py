@@ -15,7 +15,10 @@ app.config['SQLALCHEMY_DATABASE_URI'] =\
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)  #Database set
 
-
+class User(db.Model):
+    __tablename__ = 'User'
+    id = db.Column(id=Integer, primary_key=True)
+    name = db.Column(db.String(50), unique=True)
 
 bootstrap = Bootstrap(app)
 app.config['SECRET_KEY'] = '123'
