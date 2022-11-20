@@ -12,5 +12,9 @@ Also using a [This textbook](https://www.pdfdrive.com/flask-web-development-deve
 - Views and Routes
 - Templates
 - Error Handelling
-- More to come 
-
+- Creating Forms using flask_wtf
+- Handelling Form views
+- Python Framework for Database management
+- SQLAlchemy
+- Defining Models and Relationships
+- Database management(Querying DB, Creating Column)
