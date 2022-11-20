@@ -18,3 +18,4 @@ Also using a [This textbook](https://www.pdfdrive.com/flask-web-development-deve
 - SQLAlchemy
 - Defining Models and Relationships
 - Database management(Querying DB, Creating Column)
+- More to come
